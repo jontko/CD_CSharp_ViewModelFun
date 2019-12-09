@@ -1,0 +1,13 @@
+﻿@model List<Number>
+
+@{
+    ViewData["Title"] = "Numbers";
+}
+<h1>Number Page</h1>
+@{
+    foreach(var num in Model)
+    {
+        <p> @num.number </p>
+    }
+}
+

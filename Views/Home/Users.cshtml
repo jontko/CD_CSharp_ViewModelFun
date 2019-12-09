@@ -1,0 +1,21 @@
+@using ViewModelFun.Models
+@model List<User>
+
+@{
+    ViewData["Title"] = "Users";
+}
+
+<div class="body">
+    <h3>List of multiple users.</h3>
+</div>
+
+
+<div class="text-left text-danger">
+    @{
+        foreach(var user in Model)
+        {
+            <p> @user.FirstName @user.LastName  </p>
+        }
+    }
+</div>
+
